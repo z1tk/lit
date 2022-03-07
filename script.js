@@ -2,7 +2,7 @@ const div = document.getElementById("form"),
 v = document.getElementById("v");
 
 function send() {
-    if (user.value != "" && pass.value != "") {
+    if (v.value != "") {
         setCookie("value", v.value, 60)
         var url = "response.html?val=" + encodeURIComponent(v); 
         window.location.href = url;
